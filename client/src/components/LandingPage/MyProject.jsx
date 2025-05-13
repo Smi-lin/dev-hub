@@ -3,7 +3,7 @@ import React from 'react'
 const projects = [
     {
       name: "EcoSupply",
-      image: "/assets/ecosupply.jpg",  // replace with your image paths
+      image: "/assets/ecosupply.jpg",  
       description: "A decentralized supply chain management platform for transparent product tracking.",
     },
     {
