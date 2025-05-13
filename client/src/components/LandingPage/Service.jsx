@@ -4,34 +4,19 @@ import { Code2, TrendingUp, Headphones, Layers, BarChart2 } from "lucide-react";
 const services = [
   {
     icon: <Code2 className="text-green-400 w-8 h-8" />,
-    title: "Web Development",
+    title: "Frontend Developer",
     description: "Building clean, responsive, and functional web applications.",
   },
   {
-    // icon: <Cube className="text-green-400 w-8 h-8" />,
-    title: "3D Design",
+    icon: <TrendingUp className="text-green-400 w-8 h-8" />,
+    title: "Smart Contract",
     description: "Creating eye-catching 3D concepts for products and brands.",
   },
   {
     icon: <TrendingUp className="text-green-400 w-8 h-8" />,
-    title: "Design Trends",
+    title: "Technical Writer",
     description: "Crafting modern, trendy UI/UX experiences.",
-  },
-  {
-    icon: <Headphones className="text-green-400 w-8 h-8" />,
-    title: "Customer Support",
-    description: "Reliable and prompt assistance for client projects.",
-  },
-  {
-    icon: <Layers className="text-green-400 w-8 h-8" />,
-    title: "Branding",
-    description: "Developing strong and consistent brand identities.",
-  },
-  {
-    icon: <BarChart2 className="text-green-400 w-8 h-8" />,
-    title: "Marketing",
-    description: "Strategizing effective digital marketing campaigns.",
-  },
+  }
 ];
 
 const Service = () => {

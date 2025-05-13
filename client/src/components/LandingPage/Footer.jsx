@@ -1,67 +1,26 @@
-import React from 'react'
-import { TypeAnimation } from 'react-type-animation'
-import './index.css'
+import React from "react";
+import { Twitter, Linkedin, Github } from "lucide-react";
 
-function App() {
+const Footer = () => {
   return (
-    <div className="flex items-center justify-between min-h-screen bg-black px-10 text-white">
-      
-      {/* Left Side */}
-      <div className="space-y-6">
-        <h3 className="text-gray-400 text-lg">Hi There!</h3>
+    <footer className="bg-[#1f2937] text-gray-400 py-8">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+        <p className="mb-4 md:mb-0">&copy; 2025 Rokeebat Olajide. All rights reserved.</p>
 
-        <h1 className="text-5xl font-bold">
-          I am {' '}
-          <TypeAnimation
-            sequence={[
-              'Frontend Developer',
-              2000,
-              'Smart Contract Developer',
-              2000,
-              'Technical Writer',
-              2000,
-              'Open Source Contributor',
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </h1>
-
-        <p className="text-blue-400 text-xl">I make the complex simple.</p>
-
-        <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg">
-          Contact Me
-        </button>
-
-        {/* Footer */}
-        <div className="flex space-x-10 pt-20 text-sm">
-          <div>
-            <p className="text-gray-400">Email</p>
-            <p>contact@example.com</p>
-          </div>
-          <div>
-            <p className="text-gray-400">Phone</p>
-            <p>+1 202-390-4002</p>
-          </div>
-          <div>
-            <p className="text-gray-400">Location</p>
-            <p>New York, USA</p>
-          </div>
+        <div className="flex space-x-4">
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <Twitter className="w-6 h-6 hover:text-green-400 transition" />
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="w-6 h-6 hover:text-green-400 transition" />
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <Github className="w-6 h-6 hover:text-green-400 transition" />
+          </a>
         </div>
       </div>
+    </footer>
+  );
+};
 
-      {/* Right Side */}
-      <div className="w-1/2 flex justify-center">
-        <img 
-          src="https://i.ibb.co/yR6VYB9/profile-pic.png"
-          alt="Profile"
-          className="rounded-lg max-h-[550px] object-cover"
-        />
-      </div>
-    </div>
-  )
-}
-
-export default App
+export default Footer;
